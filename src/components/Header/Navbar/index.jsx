@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, NavContainer, NavItem, Link } from './style'
 
-export default function Navbar() {
+export default function NavDesctop() {
     return (
         <Nav>
             <NavContainer>

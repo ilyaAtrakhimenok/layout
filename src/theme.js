@@ -1,4 +1,5 @@
 const colors = {
+    back: '#EBF1FF',
     blue: '#215EE9',
     gray: '#7D8790',
     black: '#000000',
@@ -6,13 +7,29 @@ const colors = {
 }
 
 const size = {
+    extraSmall: 370,
     mobile: 568,
-    table: 1024,
+    table: 768,
+    middle: 1024,
     wrapper: 1376
 }
 
-const fontSizes = [14,16,20,56,65]
-const lineSizes = [19,24,30,66,101]
+
+
+const fontSizes = {
+    min: 14,
+    default: 16,
+    medium: 20,
+    xl: 42,
+    max: 56,
+    superMax: 65
+}
+const lineSizes = {
+    min: 19,
+    default: 24,
+    medium: 30,
+    max: 66
+}
 
 
 export {

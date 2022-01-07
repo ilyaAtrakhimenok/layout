@@ -2,19 +2,34 @@ import styled from "styled-components";
 import { font } from "../../../mixins";
 import { colors, fontSizes, lineSizes } from "../../../theme";
 
+import { size } from '../../../theme';
+
+const {table, middle} = size; 
+
 const {blue, gray} = colors;
 
-const fontSize = fontSizes[1];
-const lineHeight = lineSizes[0];
+const fontSize = fontSizes['default'];
+const lineHeight = lineSizes['min'];
 
 const circleSize = 7;
 
 const Nav = styled.nav`
+    display: ${props => props.theme.visibility ? 'block' : 'none'}; 
     width:440px;
+    @media(max-width: ${middle}px){
+        width: 100%;
+        height: auto;
+    }
+
 `
 const NavContainer = styled.ul`
     display: flex;
     justify-content: space-between;
+    @media(max-width: ${middle}px){
+        flex-direction: column;
+        align-items:center;
+        gap: 20px;
+    }
 `
 const NavItem = styled.li`
     position: relative; 
@@ -32,6 +47,13 @@ const NavItem = styled.li`
     &:hover{
         &:after{
             display: block;
+        }
+    }
+    @media(max-width: ${middle}px){
+        width: fit-content;
+        &: after{
+            bottom:${circleSize}px;
+            left: calc(100% + ${circleSize * 1.5}px);
         }
     }
 `

@@ -8,4 +8,5 @@ export default function Authorization() {
             <RegButton>Register</RegButton>
         </AuthorizationContainer>
     )
+
 }

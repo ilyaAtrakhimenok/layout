@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 import { font } from "../../../mixins";
-import { colors, fontSizes, lineSizes } from "../../../theme";
+import { colors, fontSizes, lineSizes} from "../../../theme";
 
-const {blue, gray, white}  = colors;
-const fontSize = fontSizes[1];
-const lineHeight = lineSizes[0];
+const { blue, gray, white } = colors;
+const fontSize = fontSizes['default'];
+const lineHeight = lineSizes['min'];
 
 const AuthorizationContainer = styled.div`
-    display: flex;
+    display: ${props => props.theme.visibility ? 'flex' : 'none'}; 
     justify-content: space-between;
     align-items: center;
     width: 230px;
@@ -43,4 +43,4 @@ const LogInButton = styled(Button)`
     }
 `
 
-export {AuthorizationContainer, RegButton, LogInButton}
+export { AuthorizationContainer, RegButton, LogInButton }

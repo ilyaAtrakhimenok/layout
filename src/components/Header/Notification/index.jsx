@@ -3,8 +3,8 @@ import {NotificationContainer} from './style'
 
 
 export default function Notification(){
-    return (
-        <NotificationContainer />
-    )
+        return (
+            <NotificationContainer />
+        )
 
 }

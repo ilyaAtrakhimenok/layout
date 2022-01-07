@@ -1,8 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
+import background from './asserts/Home.png'
+import { size, colors } from './theme'
 
-import { size } from './theme'
+const {back} = colors;
 
-const { wrapper } = size;
+const { wrapper, table, middle } = size;
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -13,10 +15,14 @@ const GlobalStyle = createGlobalStyle`
       height: 100%;
       width: 100%;
       font-family: 'Roboto', sans-serif;
+      background-image: url(${background});
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-color: #EBF1FF;
+      @media(max-width: ${table}px){
+        background-image: none;
+        background-color: ${back};
+      }
   }
 
   body > div {
@@ -26,6 +32,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 165px 0 100px 0;
     @media(max-width:${wrapper}px){
       padding: 165px 20px 100px 20px;
+    }
+    @media(max-width: ${middle}px){
+      padding: 30px 0 30px 30px;
+    }
+    @media(max-width: ${table}px){
+      padding: 20px 0px 120px 0px;
     }
   }
 `
