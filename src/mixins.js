@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components'
+import {css} from 'styled-components'
 
 function font(family, weight, fontSize, lineHeight){
     return css`
