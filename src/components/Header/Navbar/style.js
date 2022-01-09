@@ -1,16 +1,12 @@
 import styled from "styled-components";
-import { font } from "../../../mixins";
-import { colors, fontSizes, lineSizes } from "../../../theme";
+import { font } from "@/mixins";
+import { colors, fontSizes, lineSizes, size } from "@/theme";
 
-import { size } from '../../../theme';
-
-const {table, middle} = size; 
-
+const {middle} = size; 
 const {blue, gray} = colors;
 
 const fontSize = fontSizes['default'];
 const lineHeight = lineSizes['min'];
-
 const circleSize = 7;
 
 const Nav = styled.nav`

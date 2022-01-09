@@ -1,10 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
-import background from './asserts/Home.png'
+import backgroundPNG from './asserts/Home.png'
+import backgroundWebp from './asserts/Home.webp'
 import { size, colors } from './theme'
 
 const {back} = colors;
-
 const { wrapper, table, middle } = size;
+
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -15,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
       height: 100%;
       width: 100%;
       font-family: 'Roboto', sans-serif;
-      background-image: url(${background});
+      background-image: -webkit-image-set(url(${backgroundPNG}) 1x, url(${backgroundWebp}) 1x);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -37,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
       padding: 30px 0 30px 30px;
     }
     @media(max-width: ${table}px){
-      padding: 20px 0px 120px 0px;
+      padding: 20px 0 0 0;
     }
   }
 `

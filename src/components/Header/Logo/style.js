@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { WIND_SVG } from "../../../constants/store";
-import { size } from '../../../theme';
 
-const {table, middle} = size; 
+import { WIND_SVG } from "@/constants/store";
+import { size } from '@/theme';
 
+const {middle} = size; 
 const logoSize = 24;
 
 const LogoContainer = styled.a`

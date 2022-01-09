@@ -1,11 +1,14 @@
 import styled from 'styled-components'
-import { LOWER_CLOUDE_SVG, UPPER_CLOUDE_SVG } from '../../constants/store'
-import { size } from '../../theme';
-import image from "../../asserts/Hero.png"
-const { table, middle, mobile} = size;
 
+import { LOWER_CLOUDE_SVG, UPPER_CLOUDE_SVG } from '@/constants/store'
+import { size } from '@/theme';
+import image from "@/asserts/Hero.png"
+import imageWeb from "@/asserts/Hero.webp"
 
-const PictureContainer = styled.div`
+const { table, middle} = size;
+
+// had to use ::after due to drop shadow otherwise applyed to each element
+const PictureContainer = styled.section`
     position: relative;
     width: 100%;
     height: 100%;
@@ -19,7 +22,7 @@ const PictureContainer = styled.div`
         background-repeat: no-repeat;
     }
     &:after{
-        background-image: url(${image});
+        background-image: -webkit-image-set(url(${image}) 1x, url(${imageWeb}) 1x);
         background-size:  740px 885px;
         background-position: right;
         filter: drop-shadow(20px -20px 30px rgba(22, 22, 22, 0.5));
@@ -75,15 +78,11 @@ const CloudContainer = styled.div`
     @media(max-width: ${middle}px){
         overflow: hidden;
         &:after{
-            content: ${LOWER_CLOUDE_SVG};
-            top: 35%;
-            left: 30%;
+            bottom: 10%;
             width: 650px;
         }
         &:before{
-            content: ${UPPER_CLOUDE_SVG};
-            top:15%;
-            left: 50%;
+      
             width: 450px;
         }
     }        
@@ -95,15 +94,15 @@ const CloudContainer = styled.div`
             display: none
         }
     }       
-
 `
+
 const Container = styled.div`
     max-width: 540px;
     padding-top: 100px;
     @media(max-width: ${middle}px){
         padding-top:0;
     }
-    @media(max-width: ${mobile}px){
+    @media(max-width: ${table}px){
         padding:0 10px;
     }
 `

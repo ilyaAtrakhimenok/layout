@@ -1,11 +1,14 @@
 import React from "react";
+
+import ThemeContextProvider from "@/context/themeContext";
+
 import Logo from "./Logo"
 import Navbar from './Navbar'
 import Authorization from "./Authorization";
 import Notification from "./Notification";
 import { HeaderContainer } from "./style";
-import ThemeContextProvider from "../../context/themeContext";
 import Burger from "./Burger";
+
 export default function Header() {
     return (
         <HeaderContainer>

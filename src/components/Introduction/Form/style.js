@@ -1,9 +1,11 @@
 import styled from 'styled-components'
-import {RegButton} from '../../Header/Authorization/style'
-import { MAIL_SVG } from '../../../constants/store';
-import { fontSizes, lineSizes, size } from "../../../theme";
-import { font } from "../../../mixins";
-const { mobile, smallMobile } = size;
+
+import {RegButton} from '@/components/Header/Authorization/style'
+import { MAIL_SVG } from '@/constants/store';
+import { fontSizes, lineSizes, size } from "@/theme";
+import { font } from "@/mixins";
+
+const { mobile} = size;
 
 const fontSize = fontSizes['default'];
 const lineHeight = lineSizes['min'];

@@ -1,20 +1,11 @@
 import React from "react";
-import {Container, StatContainer, StatNumber, StatInfo} from './style'
 
-import { colors } from "../../../theme";
+import { colors } from "@/theme";
+
+import {Container} from './style'
+import Stat from './StatItem'
 
 const { black, blue } = colors;
-
-
-function Stat({ color, number, children }) {
-    return (
-        <StatContainer>
-            <StatNumber color={color}>{number}</StatNumber>
-            <StatInfo>{children}</StatInfo>
-        </StatContainer>
-    )
-}
-
 
 export default function Statisctic() {
     return (

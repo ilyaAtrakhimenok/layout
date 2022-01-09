@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 
-import { size } from '../theme';
+import { size } from '@/theme';
 
 const {table, middle} = size; 
 

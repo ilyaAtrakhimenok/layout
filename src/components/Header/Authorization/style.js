@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { font } from "../../../mixins";
-import { colors, fontSizes, lineSizes} from "../../../theme";
+import { font } from "@/mixins";
+import { colors, fontSizes, lineSizes} from "@/theme";
 
 const { blue, gray, white } = colors;
 const fontSize = fontSizes['default'];

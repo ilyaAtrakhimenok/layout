@@ -1,4 +1,5 @@
 import React from "react";
+
 import {OverTitle, Title, UnderTitle} from './style'
 
 export default function Titles() {

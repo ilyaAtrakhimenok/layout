@@ -1,24 +1,24 @@
 import styled from 'styled-components';
 
+import { font } from "@/mixins";
+import { colors, fontSizes, lineSizes, size } from "@/theme";
 
-
-
-import { font } from "../../../mixins";
-import { colors, fontSizes, lineSizes } from "../../../theme";
-
-import { size } from '../../../theme';
-
-const {middle,mobile, smallMobile} = size;
-const { blue, gray } = colors;
+const {middle,mobile} = size;
+const { blue } = colors;
 
 const fontSizeTitle = fontSizes['superMax'];
-const fontSizeOverTitle = fontSizes['min'];
-const fontSizeUnderTitle = fontSizes['medium'];
 const lineHeightTitle = lineSizes['max'];
-const lineHeightOverTitle = lineSizes['default'];
-const lineHeightUnderTitle = lineSizes['medium'];
 
-const fontSizeTitleMiddle = fontSizes['max']
+const fontSizeTitleMiddle = fontSizes['max'];
+
+const fontSizeTitleMobile = 30;
+const lineHeightTitleMobile = 40;
+
+const fontSizeOverTitle = fontSizes['min'];
+const lineHeightOverTitle = lineSizes['default'];
+
+const fontSizeUnderTitle = fontSizes['medium'];
+const lineHeightUnderTitle = lineSizes['medium'];
 
 const OverTitle = styled.h3`
     margin-bottom: 20px;
@@ -34,7 +34,7 @@ const Title = styled.h1`
         ${font('Roboto', 'bold', fontSizeTitleMiddle, lineHeightTitle)}  
     }
     @media(max-width: ${mobile}px){
-        ${font('Roboto', 'bold', 30, 40)}  
+        ${font('Roboto', 'bold', fontSizeTitleMobile, lineHeightTitleMobile)}  
     }
     `
 

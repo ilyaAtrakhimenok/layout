@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import {NOTIFICATION_SVG} from '../../../constants/store'
+
+import {NOTIFICATION_SVG} from '@/constants/store'
 
 const notificationSize = 22;
 const animationDuration = '2s';

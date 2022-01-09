@@ -14,8 +14,6 @@ const size = {
     wrapper: 1376
 }
 
-
-
 const fontSizes = {
     min: 14,
     default: 16,
@@ -24,13 +22,13 @@ const fontSizes = {
     max: 56,
     superMax: 65
 }
+
 const lineSizes = {
     min: 19,
     default: 24,
     medium: 30,
     max: 66
 }
-
 
 export {
     colors,

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import { size } from '../../theme';
+import { size } from '@/theme';
 
-const {table, middle} = size; 
+const {middle} = size; 
 
 const HeaderContainer = styled.header`
     position: relative;
