@@ -6,7 +6,7 @@ const { table} = size;
 
 const Container = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     @media(max-width: ${table}px){
        display:none;

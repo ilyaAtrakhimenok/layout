@@ -14,7 +14,7 @@ const FormContainer = styled.form`
     position: relative;
     width:515px;
     height: 70px;
-    margin-bottom: 120px;
+    margin-bottom: 110px;
     @media(max-width:${mobile}px){
         width:100%;
     }

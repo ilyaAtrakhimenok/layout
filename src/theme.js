@@ -19,7 +19,7 @@ const fontSizes = {
     default: 16,
     medium: 20,
     xl: 42,
-    max: 56,
+    max: 52,
     superMax: 65
 }
 

@@ -29,10 +29,11 @@ const GlobalStyle = createGlobalStyle`
   body > div {
     max-width: ${wrapper}px;
     height: 100%;
-    margin: 0 auto;
-    padding: 165px 0 100px 0;
+    margin: 0 75px 0 155px;
+    padding: 155px 0 100px 0;
     @media(max-width:${wrapper}px){
-      padding: 165px 20px 100px 20px;
+      padding: 155px 20px 100px 20px;
+      margin: 0;
     }
     @media(max-width: ${middle}px){
       padding: 30px 0 30px 30px;

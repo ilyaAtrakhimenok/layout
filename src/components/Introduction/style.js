@@ -5,7 +5,7 @@ import { size } from '@/theme';
 import image from "@/asserts/Hero.png"
 import imageWeb from "@/asserts/Hero.webp"
 
-const { table, middle} = size;
+const { mobile, table, middle} = size;
 
 // had to use ::after due to drop shadow otherwise applyed to each element
 const PictureContainer = styled.section`
@@ -25,7 +25,7 @@ const PictureContainer = styled.section`
         background-image: -webkit-image-set(url(${image}) 1x, url(${imageWeb}) 1x);
         background-size:  740px 885px;
         background-position: right;
-        filter: drop-shadow(20px -20px 30px rgba(22, 22, 22, 0.5));
+        filter: drop-shadow(50px -5px 30px rgba(22, 22, 74, 0.2));
         z-index: -1;
     }
     @media(max-width: ${middle}px){
@@ -35,9 +35,9 @@ const PictureContainer = styled.section`
         }
     }
     @media(max-width: ${table}px){
-        padding-top:144vw;
+        padding-top:137vw;
         &:after{
-            background-size: 120vw;
+            background-size: 115vw;
             background-position: center top;
         }
         &:before{
@@ -64,10 +64,10 @@ const CloudContainer = styled.div`
     }
     &:after{
         content: ${LOWER_CLOUDE_SVG};
-        bottom: 20%;
-        right: -5%;
+        bottom: 25%;
+        right: -7%;
         width: 820px;
-        height: 500px;
+        height: 400px;
     }
     &:before{
         content: ${UPPER_CLOUDE_SVG};
@@ -97,12 +97,15 @@ const CloudContainer = styled.div`
 `
 
 const Container = styled.div`
-    max-width: 540px;
-    padding-top: 100px;
+    max-width: 560px;
+    padding-top: 95px;
     @media(max-width: ${middle}px){
         padding-top:0;
     }
     @media(max-width: ${table}px){
+        padding:0 0 0 40px;
+    }
+    @media(max-width: ${mobile}px){
         padding:0 10px;
     }
 `

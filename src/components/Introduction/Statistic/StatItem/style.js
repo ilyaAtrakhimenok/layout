@@ -27,7 +27,7 @@ const StatContainer = styled.div`
 
 `
 const StatNumber = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     color: ${props => props.color};
     ${font('Roboto', 'bold', fontSizeNumber, lineHeightNumber)}
     @media(max-width: ${middle}px){
